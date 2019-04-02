@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ appName }}!
+  </h1>
+
+  <div style="text-align:left;margin-top: 40px;">
+    <div>Title <input type="text" [(ngModel)]="title"></div>
+    <div>Author <input type="text" [(ngModel)]="author"></div>
+    <div><input type="button" (click)="addRows()" value="Add"></div>
+  </div>
+
+  <button (click)="deleteSelectedRows()">Delete Selected Rows</button>
+
+  <ag-grid-angular 
+    #agGrid
+    style="width: 800px; height: 500px; margin-top: 20px;"
+    id="myGrid"
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    editType="fullRow"
+    [defaultColDef]="defaultColDef"
+    rowSelection="multiple"
+    (gridReady)="onGridReady($event)"
+    (rowValueChanged)="onRowValueChanged($event)"
+    >
+  </ag-grid-angular>
+</div>
+
+<router-outlet></router-outlet>
