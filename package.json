@@ -1,6 +1,19 @@
 {
   "name": "angular-redux-crud-starter",
-  "version": "0.0.0",
+  "description": "This is a starter project which uses Angular Redux (ngrx) data stores and effects to perform CRUD operations. It's a perfect place to get started with Angular and Redux.",
+  "keywords": [
+    "Angular","Redux", "ngrx", "CRUD", "ngrx store", "ngrx effects"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Satya Jugran",
+    "email": "satya.jugran@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satya-jugran/Angular-Redux-CRUD-Starter"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
